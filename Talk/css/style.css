@@ -1,0 +1,605 @@
+﻿body {
+	margin: 40px 0 0 0;
+	padding: 0;
+	font-size: 12px;
+	font-family: 宋体;
+	background: #fff;
+}
+
+/*首页的样式设置*/
+
+/*更改jQuery UI主题的对话框header的背景*/
+.ui-widget-header {
+	background: url(../img/bg_header.jpg);
+}
+
+/*按钮正常状态的背景*/
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+	background: url(../img/bg_button.jpg);
+	color: #FFFFFF;
+}
+
+.ui-tabs .ui-tabs-nav li a {
+	color: #FFFFFF;
+}
+
+.ui-tabs .ui-tabs-nav li a:hover {
+	color: #222222;
+}
+
+.ui-dialog-titlebar .ui-dialog-title {
+	color: #FFFFFF;
+}
+
+
+/*更改工具提示的文本颜色*/
+/*.ui-tooltip{
+	color: #666666;
+}*/
+
+
+/*修改当天日期的样式*/
+.ui-datepicker-today .ui-state-highlight {
+	border: 1px solid gray;
+	color: #f60;
+}
+
+
+/*日历触发器的样式*/
+.ui-datepicker-trigger {
+	margin-left: 5px;
+}
+
+#header {
+	width: 100%;
+	height: 45px;
+	background: url(../img/bg_header.jpg);
+	position: absolute;
+	top: 0;
+	position: fixed;
+	z-index: 9999;
+}
+
+#header .header_main {
+	width: 1000px;
+	height: 45px;
+	margin: 0 auto;
+}
+
+#header .header_main h1 {
+	font-size: 24px;
+	margin: 0;
+	padding: 0;
+	color: #FFFFFF;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 10px;
+	float: left;
+	font-family: "agency fb";
+}
+
+#header .header_search {
+	padding: 8px 0 8px 0;
+	float: left;
+}
+
+#header .header_search .search {
+	width: 300px;
+	height: 30px;
+	border: 1px solid #ccc;
+	background: #fff;
+	color: #666;
+	font-size: 14px;
+	text-indent: 5px;
+	border-radius: 8px;
+}
+
+#header .header_button {
+	padding: 7px;
+	float: left;
+}
+
+#header .header_member {
+	float: right;
+	height: 45px;
+	line-height: 45px;
+	color: #FFFFFF;
+}
+
+#header .header_member a {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 16px;
+}
+
+#header .header_member a:hover {
+	color: #C6E746;
+}
+
+#reg,#login,#question,#education,#work,#location{
+	padding: 15px 0 0 15px;
+}
+
+#reg p,#login p,#question p,#education p,#work p,#location p {
+	margin: 15 0;
+	padding: 0;
+}
+
+#reg p label,
+#login p label,
+#question p label,#education p label,#work p label,#location p label {
+	font-size: 14px;
+	color: #666;
+}
+
+#reg .star,
+#login .star,
+#question .star {
+	color: maroon;
+	font-size: 14px;
+}
+
+#reg ol,
+#login ol,
+#question ol,#introduce ol{
+	margin: 0;
+	padding: 0 0 0 20px;
+	color: maroon;
+}
+
+#reg .succ,
+#login .succ,
+#question .succ {
+	display: inline-block;
+	width: 24px;
+	background: url(../img/reg_succ.png) no-repeat;
+}
+
+#reg ol li,
+#login ol li,
+#question ol li {
+	height: 20px;
+}
+
+#reg .text,#login .text,#question .text,#education .text,#work .text,#location .text,#location select {
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	background: #fff;
+	width: 200px;
+	height: 25px;
+	line-height: 25px;
+	text-indent: 5px;
+	color: #666;
+}
+
+#loading {
+	background: url(../img/loading.gif) no-repeat 20px center;
+	line-height: 25px;
+	font-size: 16px;
+	font-weight: bold;
+	text-indent: 40px;
+	color: #666;
+}
+
+#expires {
+	margin: 0 2px 0 125px;
+}
+
+#main {
+	width: 1000px;
+	margin: 80px auto;
+}
+
+#main .main_left {
+	width: 780px;
+	float: left;
+}
+
+.main_left .state_settings {
+	height: 50px;
+	line-height: 50px;
+	font-size: 14px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: #666666;
+	border-bottom: 1px solid #CCCCCC;
+	margin-top: 20px;
+}
+
+.state_settings .state {
+	float: left;
+	padding-top: 20px;
+}
+
+.state_settings .settings {
+	float: right;
+	padding-top: 20px;
+}
+
+.state_settings .settings a {
+	text-decoration: none;
+	color: #666666;
+}
+
+#main .main_right {
+	width: 200px;
+	float: right;
+}
+
+.main_right .pic {
+	position: relative;
+	display: inline-block;
+}
+
+.pic img {
+	border-radius: 10px;
+}
+
+.pic .glyphicon-remove {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	cursor: pointer;
+}
+
+#tabs {
+	border: none;
+}
+
+#ui-tabs-1,
+#ui-tabs-2,
+#ui-tabs-3 {
+	border: 1px solid #AAAAAA;
+	border-top: none;
+	position: relative;
+	top: -2px;
+}
+
+
+/*更改折叠菜头部的样式*/
+
+.ui-accordion-header {
+	background: url(../img/bg_header.jpg);
+}
+
+#accordion {
+	margin-top: 10px;
+}
+
+#accordion h1 {
+	color: #FFFFFF;
+	font-size: 14px;
+}
+
+#error {
+	background: url(../img/error.png) no-repeat 20px center;
+	line-height: 25px;
+	font-size: 16px;
+	font-weight: bold;
+	text-indent: 40px;
+	color: #666;
+}
+
+.content {
+	width: 780px;
+	float: left;
+	/*	font-size: 12px;*/
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.content .user_pic img {
+	float: left;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+
+.content h4 {
+	color: #666;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.content h3 {
+	color: #259;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.content .editor {
+	color: #333;
+	line-height: 180%;
+	overflow: hidden;
+}
+
+.content .bottom {
+	padding: 5px 0 0 0;
+}
+
+.content hr {
+	color: #ccc;
+	height: 1px;
+}
+
+.content .up {
+	float: right;
+	color: #369;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.content .down {
+	/*float:right;*/
+	color: #369;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.content .comment {
+	color: #369;
+	cursor: pointer;
+}
+
+.content .comment_list {
+	display: none;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	min-height: 25px;
+	padding: 5px 10px;
+}
+
+.content .comment_list dl {
+	margin: 0;
+	padding: 3px 10px 5px 0;
+	/*border-bottom: 1px solid #CCCCCC;*/
+}
+
+.content .comment_list dl dt {
+	margin: 0;
+	padding: 5px 0 0 0;
+	color: #369;
+}
+
+.content .comment_list dl dd {
+	margin: 0;
+	padding: 0;
+	line-height: 180%;
+	color: #333;
+}
+
+.content .comment_list dl dd.date {
+	color: #999;
+}
+
+.content .comment_add {
+	border: none;
+	text-align: right;
+}
+
+.content .comment_add textarea {
+	width: 100%;
+	border: 1px solid #ccc;
+	background: #fff;
+	padding: 5px;
+	margin: 0 0 5px 0;
+	border-radius: 4px;
+	font-size: 12px;
+	color: #666;
+	resize: none;
+}
+
+.content .comment_add input {
+	cursor: pointer;
+	position: relative;
+	right: -5px;
+}
+
+.content .comment_load dd {
+	background: url(../img/comment_load.gif) no-repeat 75px;
+}
+
+.content .comment_content {
+	border-bottom: 1px solid #ccc;
+}
+
+.comment_content .user_pic img {
+	width: 45px;
+	height: 45px;
+}
+
+.content .load_more {
+	width: 100%;
+	margin: 10px 0 0 0;
+	height: 35px;
+	line-height: 35px;
+}
+
+.content .load_more img {
+	padding: 5px 0 0 0;
+}
+
+.footer {
+	clear: both;
+	text-align: center;
+	color: #666666;
+}
+
+#top {
+	width: 33px;
+	height: 40px;
+	position: fixed;
+	bottom: 10px;
+	background: #808080;
+	left: 50%;
+	margin-left: 500px;
+	border-radius: 5px;
+}
+
+#top img {
+	padding: 5px;
+}
+/*个人中心的样式设置*/
+
+#user_info{
+	width:1000px;
+	margin: 80px auto;
+	height:800px;
+}
+#user_info .user_info_left{
+	width:690px;
+	height: auto;
+	border: 1px solid #E6E6E6;
+	float: left;
+	margin-top:15px;
+	border-radius: 5px;
+}
+#user_info .user_info_right{
+	width:300px;
+	height: 400px;
+	float: right;
+	margin-top:15px;
+}
+.info_top{
+	width:690px;
+	height:40px;
+}
+.info_top_left{
+	float:left
+}
+.info_top_left .uesr_name{
+	font-size: 18px;
+	color: #222222;
+	font-weight: 700;
+	font-family: "微软雅黑";
+	padding-left: 15px;
+}
+.info_top_left .bio{
+	font-size: 18px;
+	color: #666666;
+	font-family: "微软雅黑";
+}
+.info_top_right{
+	float: right;
+	margin-right: 5px;
+}
+ .info_main{
+ 	width:690px;
+ 	height:150px;
+ 	border-bottom: 1px dashed #E6E6E6;
+ 	padding-left: 15px;
+ }
+ .info_pic{
+ 	float: left;
+ }
+
+ .info_pic img{
+ 	border-radius: 5px;
+ }
+.info_edit{
+	float: left;
+	margin-left:15px;
+}
+.info_edit a{
+	display: inline-block;
+	font-size: 14px;
+	padding: 5px;
+	text-decoration: none;
+}
+.receive{
+	font-size:16px;
+	color:#666666;
+	padding: 20px;
+	border-bottom:1px solid #E6E6E6;
+}
+.receive button{
+	float: right;
+}
+#mytab{
+	font-size: 14px;
+	font-family: "微软雅黑";
+	font-weight: bold;
+}
+.user_status,.user_question,.user_answer,.user_article,.user_collect,.user_edit{
+	width:690px;
+	/*height:auto;*/
+	text-indent: 15px;
+	font-family: "微软雅黑";
+/*	display: none;*/
+}
+.user_status span{
+	float: right;
+	display: inline-block;
+	padding-right: 10px;
+	color:#666666;
+}
+.user_question span,.user_answer span,
+.user_article span,.user_collect span,.user_edit span{
+	display: block;
+	width: 100px;
+	height: 50px;
+    margin:50px auto;
+
+}
+.tab-content_title{
+	width:690px;
+	height: 30px;
+	line-height: 30px;
+	color:#666666;
+	border-bottom: 1px solid#E6E6E6;	
+}
+.user_info_right ul li{
+	float: left;
+	list-style: none;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #666666;
+	font-weight: 600;
+}
+.user_info_right .follow{
+	display: inline-block;
+	/*margin-right:40px;*/
+	padding-right:30px;
+	padding-bottom:8px;
+	border-right: 1px solid #E6E6E6;
+	border-bottom:1px solid #E6E6E6 ;
+}
+.user_info_right .befollowed{
+	display: inline-block;
+	width:180px;
+	border-bottom: 1px solid #E6E6E6 ;
+	padding-left:30px;
+	padding-bottom:8px;
+}
+.topic_status span{
+	display: inline-block;
+	margin-left:39px;
+	margin-top:15px;
+	margin-bottom: 15px;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #666666;
+	font-weight: 600;
+}
+.topic_status li{
+	display: inline-block;
+	list-style: none;
+	float: left;
+	margin-right:5px;	
+}
+.topic_status li img{
+	width:35px;
+	height:35px;
+	border-radius: 3px;
+}
+#introduce textarea{
+	width: 100%;
+	border: 1px solid #ccc;
+	background: #fff;
+	padding: 5px;
+	margin: 0 0 5px 0;
+	border-radius: 4px;
+	font-size: 12px;
+	color: #666;
+	resize: none;
+}

@@ -1,0 +1,400 @@
+<!--[if lt IE 8]><script>window.location.href="/jq/63AjaxShowComments/error/"</script><![endif]-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>个人中心 - 说道</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+		<link rel="stylesheet" href="css/smoothness/jquery-ui-1.10.3.custom.css" />
+		<link href="umeditor/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css" />
+	
+		<script type="text/javascript" src="js/jquery-1.12.1.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery-migrate-1.2.1.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/jquery.form.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" charset="utf-8" src="umeditor/umeditor.config.js"></script>
+		<script type="text/javascript" charset="utf-8" src="umeditor/umeditor.min.js"></script>
+		<script type="text/javascript" src="umeditor/lang/zh-cn/zh-cn.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+	<body>
+
+<!--导航栏-->
+		<div id="header">
+			<div class="header_main">
+				<h1>说道</h1>
+				<div class="header_search">
+					<input type="text" name="search" class="search" placeholder="搜索你感兴趣的内容..." />
+				</div>
+				<div class="header_button">
+					<button id="search_button">搜索</button>
+					<button id="question_button">提问</button>
+					<a href="index.html"><button id="home_page">首页</button></a>
+					<a href="topic.html"><button id="topic_page">话题</button></a>
+				</div>
+
+				<div class="header_member">
+					<a href="#" id="reg_a">注册</a>
+					<a href="user_page.html" id="member">用户</a> |
+					<a href="#" id="login_a">登陆</a>
+					<a href="#" id="logout">退出</a>
+				</div>
+			</div>
+		</div>
+<!--个人信息	-->	
+		<div id="user_info">
+			<div class="user_info_left">
+				
+				<div class="info_top">
+					<div class="info_top_left">
+						<span  class="uesr_name">Maven ,</span><span class="bio">计算机科学与技术</span>
+					</div>
+					<div class="info_top_right">
+						<a href="http://weibo.com"><img src="img/sina.png"></a>
+					</div>
+				</div>
+				<div class="info_main">
+					<div class="info_pic">
+						<img src="img/maven.jpg" />
+					</div>
+					<div class="info_edit">
+							<span class="glyphicon glyphicon-map-marker"><a href="#" class="location_a">填写居住地  | 填写行业　|　<span class="glyphicon glyphicon-user"></span></a></span><br />
+							<span class="glyphicon glyphicon-modal-window"><a href="#" class="work_a">填写工作信息</a></span><br />
+							<span class="glyphicon glyphicon-education"><a href="#" class="education_a">填写教育信息</a></span><br />
+							<span class="glyphicon glyphicon-arrow-right"><a href="#">查看详细资料</a></span><br /><br />
+							<span class="glyphicon glyphicon-pencil"><a href="#" class="introduce_a">填写个人简介</a></span>	
+					</div>
+				</div>
+				<div class="receive">
+						获得    &nbsp;<span class="glyphicon glyphicon-thumbs-up"></span> 0赞同  <span class="glyphicon glyphicon-heart"></span> 0感谢
+						<button class="btn btn-success">完善我的资料</button>
+				</div>
+				<ul id="mytab" class="nav nav-tabs nav-justified" role="tablist">
+				 	 <a href="#panel-1" class="navbar-brand" class="active"><span class=" glyphicon glyphicon-home"></span></a>
+		            <li role="presentation" class="tiwen"><a href="#panel-2">提问 <span class="badge">0</span></a></li>
+		            <li role="presentation"class="huida"><a href="#panel-3"> 回答 <span class="badge">0</span></a></li>
+		            <li role="presentation"class="wenzhang"><a href="#panel-4"> 文章 <span class="badge">0</span></a></li>
+		            <li role="presentation"class="shoucang"><a href="#panel-5"> 收藏 <span class="badge">0</span></a></li>
+		            <li role="presentation"class="bianji"><a href="#panel-6"> 公共编辑 <span class="badge">0</span></a></li>
+        		</ul>
+        		<div class="tab-content">
+        			<div class="tab-pane active" id="panel-1">
+		        		<div class="user_status">
+		        			<div class="tab-content_title"><h5>最新动态</h5></div>
+		        			<h5>关注了话题<a href="#"> 医学</a><span>6月前</span></h5><hr />
+		        			<h5>关注了话题<a href="#"> 商业</a><span>6月前</span></h5><hr />
+		        			<h5>关注了话题<a href="#"> 娱乐</a><span>6月前</span></h5><hr />
+		        		</div>
+	        		</div>
+        			<div class="tab-pane" id="panel-2">
+		        		<div class="user_question">
+		        			<div class="tab-content_title"><h5>Maven 的提问</h5></div>
+		        			<span>暂时没有提问</span>
+		        			
+		        		</div>
+	        		</div>	
+	        		<div class="tab-pane" id="panel-3">
+		        		<div class="user_answer">
+		        			<div class="tab-content_title"><h5>Maven 的回答</h5></div>
+		        			<span>暂时没有回答</span>		
+		        		</div>
+	        		</div>
+	        		<div class="tab-pane" id="panel-4">
+		        		<div class="user_article">
+		        			<div class="tab-content_title"><h5>Maven 的文章</h5></div>
+		        			<span>暂时没有文章</span>	
+		        		</div>
+	        		</div>
+	        		<div class="tab-pane" id="panel-5">
+		        		<div class="user_collect">
+		        			<div class="tab-content_title"><h5>Maven 的收藏</h5></div>
+		        			<span>暂时没有收藏</span>	
+		        		</div>
+	        		</div>
+	        		<div class="tab-pane" id="panel-6">
+		        		<div class="user_edit">
+		        			<div class="tab-content_title"><h5>Maven 的编辑</h5></div>
+		        			<span>暂时没有编辑</span>	
+		        		</div>
+	        		</div>
+        		</div>
+			</div>
+			<!--用户左边信息栏结束-->
+			<!--用户右边信息栏-->
+			<div class="user_info_right">
+				<ul>
+					<li>
+						<span class="follow"><a href="#">关注了</a><br />0 人</span>
+					</li>
+					<li>
+						<span class="befollowed"><a href="#">关注者</a><br />0 人</span>
+					</li>
+				</ul>
+				<div class="topic_status">
+					<span>关注了<a href="#">6个话题</a></span>
+					<ul class="topic_status_pic">
+						<li><a href="#"><img src="img/topic_status_pic_1.png"/></a></li>
+						<li><a href="#"><img src="img/topic_status_pic_2.png"/></a></li>
+						<li><a href="#"><img src="img/topic_status_pic_1.png"/></a></li>
+						<li><a href="#"><img src="img/topic_status_pic_2.png"/></a></li>
+						<li><a href="#"><img src="img/topic_status_pic_1.png"/></a></li>
+						<li><a href="#"><img src="img/topic_status_pic_2.png"/></a></li>
+					</ul>
+					<span>个人主页被5人浏览</span>
+				</div>
+				
+				
+			</div>
+		</div>
+	<!--个人简介dialog-->	
+	<form id="introduce" title="个人简介">
+		<ol class="introduce_error"></ol>
+		<textarea  placeholder="请输入您的个人简介..." name="introduce" ></textarea>	
+	</form>
+	<!--教育信息dialog-->
+	<form id="education" title="填写教育信息">
+			<p>
+				<label for="school">学校或教育机构：</label>
+				<input type="text" name="school" class="text" />
+				<label for="major">专业方向：</label>
+				<input type="text" name="major" class="text" />
+			</p>
+	</form>
+	<!--工作信息dialog-->
+	<form id="work" title="填写工作信息">
+			<p>
+				<label for="company">公司或组织名称：</label>
+				<input type="text" name="company" class="text" />
+				<label for="position">你的职位：</label>
+				<input type="text" name="position" class="text" />
+			</p>
+	</form>
+	<!--居住地行业信息-->
+	<form id="location" title="填写居住地和行业">
+		<p>
+			<label for="address" >居住地：</label>
+			<input type="text" name="address" class="text" />
+			<label for="business" >请选择行业：</label>
+			<select name="business">
+				<option value="">选择行业</option>
+				<option value="高新科技">高新科技</option>
+				<option value="互联网">　　互联网</option>
+				<option value="电子商务">　　电子商务</option>
+				<option value="电子游戏">　　电子游戏</option>
+				<option value="计算机软件">　　计算机软件</option>
+				<option value="计算机硬件">　　计算机硬件</option>
+				<option value="信息传媒">信息传媒</option>
+				<option value="出版业">　　出版业</option>
+				<option value="电影录音">　　电影录音</option>
+				<option value="广播电视">　　广播电视</option>
+				<option value="通信">　　通信</option>
+				<option value="金融">金融</option>
+				<option value="银行">　　银行</option>
+				<option value="资本投资">　　资本投资</option>
+				<option value="证券投资">　　证券投资</option>
+				<option value="保险">　　保险</option>
+				<option value="信贷">　　信贷</option>
+				<option value="财务">　　财务</option>
+				<option value="审计">　　审计</option>
+				<option value="服务业">服务业</option>
+				<option value="法律">　　法律</option>
+				<option value="餐饮">　　餐饮</option>
+				<option value="酒店">　　酒店</option>
+				<option value="旅游">　　旅游</option>
+				<option value="广告">　　广告</option>
+				<option value="公关">　　公关</option>
+				<option value="景观">　　景观</option>
+				<option value="咨询分析">　　咨询分析</option>
+				<option value="市场推广">　　市场推广</option>
+				<option value="人力资源">　　人力资源</option>
+				<option value="社工服务">　　社工服务</option>
+				<option value="养老服务">　　养老服务</option>
+				<option value="教育">教育</option>
+				<option value="高等教育">　　高等教育</option>
+				<option value="基础教育">　　基础教育</option>
+				<option value="职业教育">　　职业教育</option>
+				<option value="幼儿教育">　　幼儿教育</option>
+				<option value="特殊教育">　　特殊教育</option>
+				<option value="培训">　　培训</option>
+				<option value="医疗服务">医疗服务</option>
+				<option value="临床医疗">　　临床医疗</option>
+				<option value="制药">　　制药</option>
+				<option value="保健">　　保健</option>
+				<option value="美容">　　美容</option>
+				<option value="医疗器材">　　医疗器材</option>
+				<option value="生物工程">　　生物工程</option>
+				<option value="疗养服务">　　疗养服务</option>
+				<option value="护理服务">　　护理服务</option>
+				<option value="艺术娱乐">艺术娱乐</option>
+				<option value="创意艺术">　　创意艺术</option>
+				<option value="体育健身">　　体育健身</option>
+				<option value="娱乐休闲">　　娱乐休闲</option>
+				<option value="图书馆">　　图书馆</option>
+				<option value="博物馆">　　博物馆</option>
+				<option value="策展">　　策展</option>
+				<option value="博彩">　　博彩</option>
+				<option value="制造加工">制造加工</option>
+				<option value="食品饮料业">　　食品饮料业</option>
+				<option value="纺织皮革业">　　纺织皮革业</option>
+				<option value="服装业">　　服装业</option>
+				<option value="烟草业">　　烟草业</option>
+				<option value="造纸业">　　造纸业</option>
+				<option value="印刷业">　　印刷业</option>
+				<option value="化工业">　　化工业</option>
+				<option value="汽车">　　汽车</option>
+				<option value="家具">　　家具</option>
+				<option value="电子电器">　　电子电器</option>
+				<option value="机械设备">　　机械设备</option>
+				<option value="塑料工业">　　塑料工业</option>
+				<option value="金属加工">　　金属加工</option>
+				<option value="军火">　　军火</option>
+				<option value="地产建筑">地产建筑</option>
+				<option value="房地产">　　房地产</option>
+				<option value="装饰装潢">　　装饰装潢</option>
+				<option value="物业服务">　　物业服务</option>
+				<option value="特殊建造">　　特殊建造</option>
+				<option value="建筑设备">　　建筑设备</option>
+				<option value="贸易零售">贸易零售</option>
+				<option value="零售">　　零售</option>
+				<option value="大宗交易">　　大宗交易</option>
+				<option value="进出口贸易">　　进出口贸易</option>
+				<option value="公共服务">公共服务</option>
+				<option value="政府">　　政府</option>
+				<option value="国防军事">　　国防军事</option>
+				<option value="航天">　　航天</option>
+				<option value="科研">　　科研</option>
+				<option value="给排水">　　给排水</option>
+				<option value="水利能源">　　水利能源</option>
+				<option value="电力电网">　　电力电网</option>
+				<option value="公共管理">　　公共管理</option>
+				<option value="环境保护">　　环境保护</option>
+				<option value="非营利组织">　　非营利组织</option>
+				<option value="开采冶金">开采冶金</option>
+				<option value="煤炭工业">　　煤炭工业</option>
+				<option value="石油工业">　　石油工业</option>
+				<option value="黑色金属">　　黑色金属</option>
+				<option value="有色金属">　　有色金属</option>
+				<option value="土砂石开采">　　土砂石开采</option>
+				<option value="地热开采">　　地热开采</option>
+				<option value="交通仓储">交通仓储</option>
+				<option value="邮政">　　邮政</option>
+				<option value="物流递送">　　物流递送</option>
+				<option value="地面运输">　　地面运输</option>
+				<option value="铁路运输">　　铁路运输</option>
+				<option value="管线运输">　　管线运输</option>
+				<option value="航运业">　　航运业</option>
+				<option value="民用航空业">　　民用航空业</option>
+				<option value="农林牧渔">农林牧渔</option>
+				<option value="种植业">　　种植业</option>
+				<option value="畜牧养殖业">　　畜牧养殖业</option>
+				<option value="林业">　　林业</option>
+				<option value="渔业">　　渔业</option>
+			</select><br /><br />
+			<label>性别：</label>
+			<input class="male" type="radio" value="1" name="gender">男  
+			<input class="female" type="radio" checked="checked" value="0" name="gender">女 	
+		</p>
+	</form>
+
+
+
+
+
+
+
+
+
+
+
+		<!--底部-->
+		<div class="footer">
+			<p>2016@ All rights reserved by HMF</p>
+		</div>
+		<!--回到顶部-->
+		<div id="top" data-tip="回到顶部">
+			<a href="javascript:;"><img src="img/toparrow.png" /></a>
+		</div>
+
+		<!--注册会话框-->
+		<form id="reg" action="123.html" title="会员注册">
+			<ol class="reg_error"></ol>
+			<p>
+				<label for="user">账号：</label>
+				<input type="text" name="user" id="user" class="text" />
+				<span class="star">*</span>
+			</p>
+			<p>
+				<label for="pass">密码：</label>
+				<input type="password" name="pass" class="text" />
+				<span class="star">*</span>
+			</p>
+			<p>
+				<label for="email">邮箱：</label>
+				<input type="text" name="email" class="text" id="email" />
+				<span class="star">*</span>
+			</p>
+			<p>
+				<label>性别：</label>
+				<input type="radio" name="sex" value="male" id="male" checked="checked" /><label for="male">男</label>
+				<input type="radio" name="sex" value="female" id="female" /><label for="female">女</label>
+			</p>
+			<p>
+				<label for="birthday">生日：</label>
+				<input type="text" name="birthday" readonly="readonly" class="text" id="date" />
+				<span class="star">*</span>
+			</p>
+		</form>
+
+		<div id="loading">数据交互中...</div>
+		<div id="error">请登录后操作...</div>
+
+		<!--登陆会话框-->
+		<form id="login" title="会员登录">
+			<ol class="login_error"></ol>
+			<p>
+				<label for="login_user">帐号：</label>
+				<input type="text" name="login_user" class="text" id="login_user" />
+				<span class="star">*</span>
+			</p>
+			<p>
+				<label for="login_pass">密码：</label>
+				<input type="password" name="login_pass" class="text" id="login_pass" />
+				<span class="star">*</span>
+			</p>
+			<p>
+				<input type="checkbox" name="expires" id="expires" checked="checked" /><label for="expires">登录后有效期一周</label>
+			</p>
+		</form>
+
+		<!--提问会话框-->
+		<form id="question" action="123.html" method="post" title="提问">
+			
+			<p>
+				<label for="title">问题名称：</label>
+				<input type="text" name="title" class="text" style="width:390px;" id="title" />
+				<span class="star"></span>
+			</p>
+
+			<script type="text/plain" id="myEditor" name="content" style="width:800px;height:240px;">请在这里输入内容......</script>
+		</form>
+
+	</body>
+
+	<script>
+		$(function() {
+			$('#mytab a').click(function(e) {
+			    e.preventDefault();
+			    $(this).tab('show');
+			});
+			
+		});
+	</script>
+
+</html>

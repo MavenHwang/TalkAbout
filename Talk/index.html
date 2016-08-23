@@ -1,0 +1,191 @@
+<!--[if lt IE 8]><script>window.location.href="/jq/63AjaxShowComments/error/"</script><![endif]-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>首页 - 说道</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+		<link rel="stylesheet" href="css/smoothness/jquery-ui-1.10.3.custom.css" />
+		<link href="umeditor/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css" />
+
+		<script type="text/javascript" src="js/jquery-1.12.1.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery-migrate-1.2.1.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/jquery.form.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" charset="utf-8" src="umeditor/umeditor.config.js"></script>
+		<script type="text/javascript" charset="utf-8" src="umeditor/umeditor.min.js"></script>
+		<script type="text/javascript" src="umeditor/lang/zh-cn/zh-cn.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+
+	<body>
+
+		<!--头部-->
+		<div id="header">
+			<div class="header_main">
+				<h1>说道</h1>
+				<div class="header_search">
+					<input type="text" name="search" class="search" placeholder="搜索你感兴趣的内容..." />
+				</div>
+				<div class="header_button">
+					<button id="search_button">搜索</button>
+					<button id="question_button">提问</button>
+					<a href="index.html"><button id="home_page">首页</button></a>
+					<a href="topic.html"><button id="topic_page">话题</button></a>
+				</div>
+
+				<div class="header_member">
+					<a href="#" id="reg_a">注册</a>
+					<a href="user_page.html" id="member">用户</a> |
+					<a href="#" id="login_a">登陆</a>
+					<a href="#" id="logout">退出</a>
+				</div>
+			</div>
+		</div>
+
+		<div id="main">
+			<div class="main_left">
+				<!--选项卡-->
+				<div id="tabs">
+					<ul>
+						<li>
+							<a href="tabs1.html">最热门的话题</a>
+						</li>
+						<li>
+							<a href="tabs2.html">小编推荐的话题</a>
+						</li>
+						<li>
+							<a href="tabs3.html">您可能喜欢的话题</a>
+						</li>
+					</ul>
+				</div>
+				<div class="state_settings">
+					<span class="state glyphicon glyphicon-list-alt" aria-hidden="true">最新动态</span>
+					<span class="settings glyphicon glyphicon-certificate" aria-hidden="true"><a href="settings_page.html">设置</a></span>
+				</div>
+
+			</div>
+
+			<div class="main_right">
+				<!--首页右上角图片-->
+				<div class="pic">
+					<a href="#"><img src="img/marry.png" alt="首页右上角图片"></a>
+					<span class="glyphicon glyphicon-remove" aria-hidden="true" title="不再显示"></span>
+				</div>
+				<!--折叠菜单-->
+				<div id="accordion">
+
+					<h1>我的草稿</h1>
+					<div>
+						<p>暂时无草稿</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+					</div>
+
+					<h1>我的收藏</h1>
+					<div>暂时无收藏</div>
+					<h1>我关注的问题</h1>
+					<div>
+						<p>暂时无关注问题</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+					</div>
+					<h1>邀请我回答的问题</h1>
+					<div>
+						<p>暂时无邀请</p>
+					</div>
+				</div>
+			</div>
+			<!--提问内容显示-->
+			<div class="content"></div>
+		</div>
+		<!--底部-->
+		<div class="footer">
+			<p>2016@ All rights reserved by HMF</p>
+
+		</div>
+		<!--回到顶部-->
+		<div id="top" data-tip="回到顶部">
+			<a href="javascript:;"><img src="img/toparrow.png" /></a>
+		</div>
+
+		<!--注册会话框-->
+		<form id="reg" action="123.html" title="会员注册">
+			<ol class="reg_error"></ol>
+			<p>
+				<label for="user">账号：</label>
+				<input type="text" name="user" id="user" class="text" />
+				<span class="star">*</span>
+			</p>
+			<p>
+				<label for="pass">密码：</label>
+				<input type="password" name="pass" class="text" />
+				<span class="star">*</span>
+			</p>
+			<p>
+				<label for="email">邮箱：</label>
+				<input type="text" name="email" class="text" id="email" />
+				<span class="star">*</span>
+			</p>
+			<p>
+				<label>性别：</label>
+				<input type="radio" name="sex" value="male" id="male" checked="checked" /><label for="male">男</label>
+				<input type="radio" name="sex" value="female" id="female" /><label for="female">女</label>
+			</p>
+			<p>
+				<label for="birthday">生日：</label>
+				<input type="text" name="birthday" readonly="readonly" class="text" id="date" />
+				<span class="star">*</span>
+			</p>
+		</form>
+
+		<div id="loading">数据交互中...</div>
+		<div id="error">请登录后操作...</div>
+
+		<!--登陆会话框-->
+		<form id="login" title="会员登录">
+			<ol class="login_error"></ol>
+			<p>
+				<label for="login_user">帐号：</label>
+				<input type="text" name="login_user" class="text" id="login_user" />
+				<span class="star">*</span>
+			</p>
+			<p>
+				<label for="login_pass">密码：</label>
+				<input type="password" name="login_pass" class="text" id="login_pass" />
+				<span class="star">*</span>
+			</p>
+			<p>
+				<input type="checkbox" name="expires" id="expires" checked="checked" /><label for="expires">登录后有效期一周</label>
+			</p>
+		</form>
+
+		<!--提问会话框-->
+		<form id="question" action="123.html" method="post" title="提问">
+			
+			<p>
+				<label for="title">问题名称：</label>
+				<input type="text" name="title" class="text" style="width:390px;" id="title" />
+				<span class="star"></span>
+			</p>
+
+			<script type="text/plain" id="myEditor" name="content" style="width:800px;height:240px;">请在这里输入内容......</script>
+		</form>
+
+	</body>
+
+	<script>
+		$(function() {
+
+		});
+	</script>
+
+</html>
